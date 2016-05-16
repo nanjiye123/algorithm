@@ -38,7 +38,7 @@ int BKDRHash(const string &str)//哈希函数
 	{
 		hash = hash * seed + str[i];	
 	}
-	return (hash & 0x7ffffffff);
+	return (hash & 0x7fffffff);//共7个f
 }
 
 bool prime(int tmp)//判断tmp是不是素数
