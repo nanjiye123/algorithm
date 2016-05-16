@@ -132,7 +132,7 @@ int BKDRHash(const string &str)//哈希函数
 	{
 		hash = hash * seed + str[i];
 	}
-	return (hash & 0x7ffffffff);
+	return (hash & 0x7fffffff);//共7个f
 }
 
 void print(phashTable H)
