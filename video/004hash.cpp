@@ -11,7 +11,7 @@ int32_t BKDRHash(const string &str)
 		hash = hash * seed + str[i];	
 		//将2进制映射到131进制
 	}
-	return (hash & 0x7ffffff);//去掉最高位的1
+	return (hash & 0x7fffffff);//去掉最高位的1
 }
 
 int32_t APHash(const string &str)
